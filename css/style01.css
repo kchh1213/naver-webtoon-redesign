@@ -1,0 +1,224 @@
+/* 라이브러리 */
+
+.con{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* section 기본값 */
+section{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 224px;
+}
+
+
+
+/* top-bar st */
+.top-bar{
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    z-index: 999;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(16, 8, 80, 0.548));
+}
+
+.top-bar .side{
+    width: 500px;
+    height: 100%;
+    flex: 2 1 0%;
+    
+}
+
+.top-bar>.side>a{
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    background-image: url(./네이버\ 웹툰\ 이미지/top-logo.png);
+    background-position: center;
+    background-size:70%;
+    background-repeat: no-repeat;
+
+
+}
+
+.top-bar ul{
+    height: 100%;
+}
+
+.top-bar ul>li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-left:40px;
+    padding-right:40px;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    color:#ffff;
+}
+
+
+/* main st */
+.main{
+    width:100%;
+    height: 100vh;
+    background-color: orange;
+    background-image: url(/네이버\ 웹툰\ 이미지/main-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed ;
+    
+}
+
+
+.main img{
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 80vw;
+
+}
+
+/* section01 st */
+.section01 {
+    color: #353B42;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    height: 1205px;
+}
+
+.section01 h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section01 .text-box{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.section01 p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.section01 img{
+    position: absolute;
+}
+.section01 .img1{
+    top:10%;
+    left:80%;
+}
+
+.section01 .img2{
+    top:30%;
+    right:80%;
+}
+
+.section01 .img3{
+    top:80%;
+    left:80%;
+}
+
+.section01 .video{
+    width: 1022px;
+    height: 576px;
+    background-color: pink;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.section01 .video iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* section 헤드라인 기본값 */
+section h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #353B42;
+    margin-bottom: 30px;
+    text-transform:uppercase;
+}
+
+/* section02 st*/
+
+.section02 {
+    border:3px solid red;
+    position:relative;
+    padding:100px 0;
+}
+
+.section02 > .con {
+    border:3px solid gold;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translatex(-50%);
+    
+}
+.section02 .img1{
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    position: relative;
+}
+
+.section02 .img2{
+    top: 0px;
+    right: 0;
+    z-index: 2;
+    position: absolute;
+}
+
+.section02 .con .text-box{
+    background-color: pink;
+    width: 300px;
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section02 .con .more-box{
+    width: 109px;
+    height: 40px;
+    background-color: #12AE5C;
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.slider-box{
+    width: 1086px;
+    background-color:yellow;
+}
+
+.slider-box .news-img-box{
+    background-color: blue;
+    background-image: url(./네이버\ 웹툰\ 이미지/뉴스1.png);
+}
+
+.slider-box .news-text-box{
+    font-size: 18px;
+    color: #ffff;
+    background-color: red;
+
+}
+
+/* section03 st */
+.section03 h1{
+    display: inline;
+}
+
+.section03 .img-box{
+    width: 30vw;
+}
+
