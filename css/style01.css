@@ -147,7 +147,7 @@ section h1 {
 .section02 {
     /* border: 3px solid red; */
     position: relative;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .section02>.con {
@@ -182,7 +182,7 @@ section h1 {
 }
 
 .section02 .con .more-box {
-    width: 109px;
+    width: 120px;
     height: 40px;
     background-color: #12AE5C;
     border-radius: 100px;
@@ -372,10 +372,6 @@ section h1 {
 }
 
 /* section05 st -business */
-.section05 {
-    height: 2000px;
-}
-
 .section05 .text-box {
     font-size: 18px;
     font-weight: 500;
@@ -389,11 +385,11 @@ section h1 {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    
+
 }
 
 .section05 .img-box .more-btn {
-    width: 109px;
+    width: 100px;
     height: 40px;
     background: #FFFFFF;
     color: #A3A3A3;
@@ -423,13 +419,11 @@ section h1 {
 .section05 .movie-box {
     width: 100%;
     height: 390px;
-    background-color: red;
 }
 
 .section05 .movie-box .box {
-    width: 227px;
+    width: 226px;
     height: 100%;
-    background-color: pink;
     transition: 0.5s;
     border-radius: 12px;
     overflow: hidden;
@@ -458,4 +452,211 @@ video {
 .section05 .movie-box .box.active {
     width: 712px;
     height: 100%;
+}
+
+
+.section05 .movie-box .box {
+    position: relative;
+}
+
+.section05 .movie-box .box.active .hoverx {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.section05 .movie-box .box .hoverx {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+
+
+.section05 .movie-box .box .hoverx>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section05 .movie-box .box .hovero {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.section05 .movie-box .box.active .hovero {
+    opacity: 1;
+    visibility: visible;
+}
+
+.section05 .movie-box .movie-text-box {
+    position: absolute;
+    color: #ffff;
+    width: 100%;
+    bottom: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.section05 .movie-box .movie-text-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section05 .movie-box .movie-text-box p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.section05 .movie-box .movie-text-box a {
+    z-index: 1;
+}
+
+/* section06 st -joinus*/
+.section06 .join-box {
+    width: 100%;
+    height: 820px;
+
+}
+
+.section06 .join-box .box {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.section06 .join-box .box img {
+    object-fit: none;
+
+}
+
+.section06 .join-box .left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section06 .join-box .right img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section06 .join-box .box a {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 472px;
+    background-color: rgba(53, 59, 66, 1);
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 20px;
+}
+
+
+.section06 .join-box .left a {
+    left: 0;
+}
+
+.section06 .join-box .right a {
+    right: 0;
+}
+
+/* section07 st - coop */
+.section07 {
+    position: relative;
+    height: 915px;
+}
+
+.section07>img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.section07 .img-box {
+    width: 99%;
+    height: 623px;
+    position: relative;
+}
+
+.section07 .img-box a {
+    position: absolute;
+    height: 70px;
+    width: 250px;
+    background-color: rgba(53, 59, 66, 1);
+    border-radius: 100px;
+    color: #ffff;
+    font-size: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* footer st */
+.footer {
+    width: 100%;
+    height: 506px;
+    background-color: #00D564;
+}
+
+.footer .con {
+    color: #ffff;
+    height: 100%;
+    /* background-image: url(../naver-webtoon-img/콘택트어스\ 지도.png); */
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    background-position: center ;
+    background-attachment: fixed ;
+}
+
+.footer .con h1 {
+    color: #ffff;
+}
+
+.footer .con h2 {
+    color: #ffff;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer .con .left {
+    width: 50%;
+    height: 100%;
+}
+
+.footer .con .left .text-box {
+    width: 372px;
+}
+
+.footer .con .left .box2 a {
+    height: 55px;
+    width: 165px;
+    border-radius: 100px;
+    border: 2px solid rgba(255, 255, 255)
+}
+
+.footer .con .right{
+    width: 50%;
+    height: 100%;
+}
+
+/* end */
+.end{
+    width: 100%;
+    height: 60px;
+    background-color: #353B42;
+    color:#ffff;
+}
+
+.end p{
+    line-height: 60px;
 }

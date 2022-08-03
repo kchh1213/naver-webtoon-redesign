@@ -12,7 +12,6 @@ $(document).ready(function () {
     // 서비스 왼쪽
     $(".right-box .box").click(function () {
         let num = $(this).index()
-
         if ($(".left-box li").eq(num).hasClass("active")) {
             $(".left-box li").removeClass("active")
         } else {
@@ -32,10 +31,11 @@ $(document).ready(function () {
         }
     });
 
-    // 영상 호버
+    // 영상 틀 박스 호버
     $(".movie-box .box").hover(function () {
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
     });
+
 
 });
