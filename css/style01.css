@@ -1,7 +1,9 @@
 /* 라이브러리 */
 
 .con {
-    max-width: 1200px;
+    width: 1200px;
+    max-width: none !important; 
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -55,10 +57,10 @@ section h1 {
 .top-bar ul>li {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-transform: uppercase;
-    font-size: 1.3vw;
+    font-size: 22px;
     color: #ffff;
 }
 
@@ -91,7 +93,6 @@ section h1 {
     color: #353B42;
     text-align: center;
     padding-top: 100px;
-    position: relative;
 }
 
 .section01 h2 {
@@ -109,24 +110,26 @@ section h1 {
     font-weight: 400;
 }
 
-
+.section01 .con{
+    position: relative;
+}
 .section01 img {
     position: absolute;
 }
 
 .section01 .img1 {
-    top: 10%;
-    left: 80%;
+    top: 20%;
+    left: 100%;
 }
 
 .section01 .img2 {
-    top: 30%;
-    right: 80%;
+    top: 40%;
+    right: 100%;
 }
 
 .section01 .img3 {
-    top: 80%;
-    left: 80%;
+    top: 90%;
+    left: 100%;
 }
 
 .section01 .video {
@@ -146,17 +149,20 @@ section h1 {
 
 .section02 {
     /* border: 3px solid red; */
-    position: relative;
     padding: 80px 0;
 }
 
 .section02>.con {
     /* border: 3px solid gold; */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translatex(-50%);
+    position: relative;
 
+}
+
+.section02>.con>img{
+    position: absolute;
+    top:50px;
+    left:-450px;
+    
 }
 
 .section02 .img1 {
@@ -358,6 +364,10 @@ section h1 {
     border-radius: 20px;
     position: relative;
     cursor: pointer;
+}
+
+.right-box .box:hover{
+    background: #eaffea;
 }
 
 .right-box .box img {
@@ -579,6 +589,7 @@ video {
     position: absolute;
     z-index: -1;
     width: 100%;
+    height: 920px;
 }
 
 .section07 .img-box {
@@ -610,11 +621,15 @@ video {
 .footer .con {
     color: #ffff;
     height: 100%;
-    /* background-image: url(../naver-webtoon-img/콘택트어스\ 지도.png); */
+    position: relative;
+    
+}
+
+.footer .con{
+    background-image: url(../naver-webtoon-img/콘택트어스\ 지도1.png);
     background-repeat: no-repeat ;
-    background-size: cover ;
-    background-position: center ;
-    background-attachment: fixed ;
+    background-position: center bottom ;
+    background-attachment:fixed;
 }
 
 .footer .con h1 {

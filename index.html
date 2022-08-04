@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>NAVER WEBTOON 리디자인</title>
     <!-- 제이쿼리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,6 +16,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- roboto 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -54,16 +57,19 @@
 
 
     <div class="main">
-        <img src="./naver-webtoon-img/main-cartoon1.png" alt="">
+        <img src="./naver-webtoon-img/main-cartoon2.png" alt="">
 
     </div>
 
-    <section class="section01">
-        <img src="./naver-webtoon-img/응큼이.png" alt="" class="img1">
-        <img src="./naver-webtoon-img/출출이.png" alt="" class="img2">
-        <img src="./naver-webtoon-img/대학일기.png" alt="" class="img3">
+    <section class="section01 ">
+
         <div class="con">
-            <h2>매일매일 새로운 재미, 가장 가까운 즐거움을 만듭니다.</h2>
+            <img src="./naver-webtoon-img/응큼이.png" alt="" class="img1" data-aos="flip-right" data-aos-anchor-placement="center-center">
+            <img src="./naver-webtoon-img/출출이.png" alt="" class="img2"
+            data-aos="flip-left"  data-aos-anchor-placement="center-center">
+            <img src="./naver-webtoon-img/대학일기.png" alt="" class="img3" data-aos="flip-right"  data-aos-anchor-placement="center-bottom"  data-aos-duration="2000">
+            <div data-aos="fade-up">
+                <h2>매일매일 새로운 재미, 가장 가까운 즐거움을 만듭니다.</h2>
             <br><br>
             <div class="text-box">
                 <p>한국을 대표하는 검색 포털 네이버의 작은 서비스 중 하나로 시작한 네이버 웹툰은 기존 만화 시장의 창작과 소비 문화 전반을 혁신하고,
@@ -74,6 +80,8 @@
                     전세계의 다양한 작가들과 독자들이 즐겁게 만날 수 있는 플랫폼으로 거듭나고자 합니다.
                 </p>
             </div>
+            </div>
+            
 
             <div class="video">
                 <iframe src='https://tv.naver.com/embed/16798704?autoPlay=true' frameborder='no' scrolling='no'
@@ -84,8 +92,8 @@
     </section>
 
     <section class="section02 mt-40">
-        <img src="./naver-webtoon-img/뉴스뒷배경.png" alt="" class="img1">
         <div class="con">
+            <img src="./naver-webtoon-img/뉴스뒷배경1.png" alt="" class="img1">
             <h1>NEWS</h1>
             <div class="news-box flex items-center mt-20">
                 <div class="left-box">
@@ -156,7 +164,7 @@
     </section>
 
     <section class="section03">
-        <div class="con">
+        <div class="con" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="left-box flex items-end">
                 <div class="text-box mr-10">
                     <h1>HISTORY</h1>
@@ -185,9 +193,9 @@
         </div>
 
         <div class="service-box flex">
-            <div class="left-box ">
+            <div class="left-box">
                 <ul>
-                    <li class="pbox1 active">
+                    <li class="pbox1 active" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <img src="./naver-webtoon-img/naver1-phone.png" alt="">
                         <div class="icon-box flex gap-4">
                             <a href="https://play.google.com/store/apps/details?id=com.nhn.android.webtoon"
@@ -204,7 +212,7 @@
 
                         </div>
                     </li>
-                    <li class="pbox2">
+                    <li class="pbox2" >
                         <img src="./naver-webtoon-img/naverglober-phone.png" alt="">
                         <div class="icon-box flex gap-4">
                             <a href="https://play.google.com/store/apps/details?id=com.naver.linewebtoon&hl=en"
@@ -329,50 +337,53 @@
     </section>
 
     <section class="section05 con pt-32">
-        <div class="text-box pb-10">
-            <h1 class="mb-4">business</h1>
-            <p>개성 넘치는 소재와 흥미진진한 스토리를 앞세운 웹툰, 웹소설이 다양한 사업 영역에서 다시 태어나고 있습니다.
-            </p>
-            <p> 빅배너, PPL, 홍보/브랜드 웹툰 등 웹툰, 웹소설 캐릭터 및 온라인 지면을 활용한 광고와 영화, 드라마, 게임, 애니메이션, 캐릭터 상품, 디지털 콘텐츠, 출판 등</p>
-            <p>다양한 파트너들과의 제휴를 통해 사업 영역을 넓히고 있습니다.
-            </p>
-        </div>
-        <div class="img-box flex">
-            <div class="left">
-                <div class="text-box  pl-10 pr-10">
-                    <img src="./naver-webtoon-img/studio.png" alt="">
-                    <div class="text-in-box mt-1 flex gap-8 items-center">
-                        <p>웹툰, 웹소설을 기반으로 한 영상 제작 스튜디오
-                        </p>
-                        <a href="https://studioncorp.com/" target="_blank">
-                            <div class="more-btn flex items-center justify-center gap-2">
-                                <p>더보기</p>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                        </a>
-
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+            <div class="text-box pb-10">
+                <h1 class="mb-4">business</h1>
+                <p>개성 넘치는 소재와 흥미진진한 스토리를 앞세운 웹툰, 웹소설이 다양한 사업 영역에서 다시 태어나고 있습니다.
+                </p>
+                <p> 빅배너, PPL, 홍보/브랜드 웹툰 등 웹툰, 웹소설 캐릭터 및 온라인 지면을 활용한 광고와 영화, 드라마, 게임, 애니메이션, 캐릭터 상품, 디지털 콘텐츠, 출판 등</p>
+                <p>다양한 파트너들과의 제휴를 통해 사업 영역을 넓히고 있습니다.
+                </p>
+            </div>
+            <div class="img-box flex">
+                <div class="left">
+                    <div class="text-box  pl-10 pr-10">
+                        <img src="./naver-webtoon-img/studio.png" alt="">
+                        <div class="text-in-box mt-1 flex gap-8 items-center">
+                            <p>웹툰, 웹소설을 기반으로 한 영상 제작 스튜디오
+                            </p>
+                            <a href="https://studioncorp.com/" target="_blank">
+                                <div class="more-btn flex items-center justify-center gap-2">
+                                    <p>더보기</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+    
+                        </div>
+    
                     </div>
-
+                </div>
+                <div class="right">
+                    <div class="text-box  pl-10 pr-10">
+                        <img src="./naver-webtoon-img/lico.png" alt="">
+                        <div class="text-in-box mt-1 flex gap-8 items-center">
+                            <p>Life is comic! 웹툰을 기반으로 한 창작 스튜디오
+                            </p>
+                            <a href="https://www.studiolico.com/" target="_blank">
+                                <div class="more-btn flex items-center justify-center gap-2">
+                                    <p>더보기</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+    
+                        </div>
+    
+                    </div>
                 </div>
             </div>
-            <div class="right">
-                <div class="text-box  pl-10 pr-10">
-                    <img src="./naver-webtoon-img/lico.png" alt="">
-                    <div class="text-in-box mt-1 flex gap-8 items-center">
-                        <p>Life is comic! 웹툰을 기반으로 한 창작 스튜디오
-                        </p>
-                        <a href="https://www.studiolico.com/" target="_blank">
-                            <div class="more-btn flex items-center justify-center gap-2">
-                                <p>더보기</p>
-                                <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                        </a>
-
-                    </div>
-
-                </div>
-            </div>
         </div>
+        
         <div class="movie-box mt-10 flex gap-5">
             <div class="box tain active">
                 <div class="hoverx active">
@@ -390,12 +401,9 @@
                             <p>서울 고시원에서 지옥을</p>
                             <p>맞이하게 된 스릴러</p>
                         </div>
-                        <div class="movie-more-box">
-                            <a href="https://youtu.be/QgsxcSFJTic" target="_blank">
+                            <a href="https://youtu.be/QgsxcSFJTic" target="_blank"  class="movie-more-box">
                                 <img src="./naver-webtoon-img/보러가기.png" alt="">
                             </a>
-
-                        </div>
                     </div>
                     <video muted autoplay loop>
                         <source
@@ -421,12 +429,9 @@
                             <p>'화장'을 통해 여신이 된</p>
                             <p>주경의 로맨틱 코미디</p>
                         </div>
-                        <div class="movie-more-box">
-                            <a href="https://youtu.be/9NGf2I-kblE" target="_blank">
+                            <a href="https://youtu.be/9NGf2I-kblE" target="_blank" class="movie-more-box">
                                 <img src="./naver-webtoon-img/보러가기.png" alt="">
                             </a>
-
-                        </div>
                     </div>
                     <video muted autoplay loop>
                         <source src="./naver-webtoon-img/True Beauty EP.0.mp4" type="video/mp4">
@@ -449,12 +454,10 @@
                             <p>소녀를 쫒아 탑에 들어온</p>
                             <p>소년을 시험하는 탑</p>
                         </div>
-                        <div class="movie-more-box">
-                            <a href="https://youtu.be/Fm_75kwCrLY" target="_blank">
+                            <a href="https://youtu.be/Fm_75kwCrLY" target="_blank"
+                            class="movie-more-box">
                                 <img src="./naver-webtoon-img/보러가기.png" alt="">
                             </a>
-
-                        </div>
                     </div>
                     <video muted autoplay loop>
                         <source src="./naver-webtoon-img/god of top Animation Teaser Video.mp4" type="video/mp4">
@@ -465,11 +468,11 @@
         </div>
     </section>
 
-    <section class="section06 con pt-32">
+    <section class="section06 con pt-32 " data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
         <h1>join us</h1>
         <div class="join-box flex">
             <div class="box left">
-                <img src="./naver-webtoon-img/채용지원.png" alt="">
+                <img src="./naver-webtoon-img/채용지원.png" height: 837px; alt="">
                 <a href="https://recruit.webtoonscorp.com/webtoon/ko/joinUs"
                     class="flex items-center justify-center gap-4">
                     <p>채용 지원하기</p>
@@ -489,7 +492,7 @@
 
     <section class="section07 mt-32">
         <img src="./naver-webtoon-img/coop-bg.png" alt="">
-        <div class="con pt-32">
+        <div class="con pt-32"  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
             <h1>cooperation</h1>
             <div class="img-box">
                 <a href="https://recruit.webtoonscorp.com/webtoon/ko/joinUs"
@@ -523,11 +526,11 @@
                 </div>
                 <div class="text-box box2">
                     <h2>COOPERATION</h2>
-                <a href="https://recruit.webtoonscorp.com/webtoon/ko/joinUs"
-                    class="flex items-center justify-center gap-4">
-                    <p>제휴 문의</p>
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
+                    <a href="https://recruit.webtoonscorp.com/webtoon/ko/joinUs"
+                        class="flex items-center justify-center gap-4">
+                        <p>제휴 문의</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
                 </div>
             </div>
             <div class="right">
@@ -547,7 +550,7 @@
                 <p>기업윤리</p>
             </div>
         </div>
-        
+
     </div>
 </body>
 

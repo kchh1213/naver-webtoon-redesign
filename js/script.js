@@ -1,4 +1,24 @@
 $(document).ready(function () {
+    // 탑바 스크롤시 색상변경
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 900) {
+            $(".top-bar").css("background", "#FFFFFF")
+            $(".top-bar").css("border-bottom-width", "1px")
+            $(".top-bar").css("border-bottom-style", "soild")
+            $(".top-bar").css("border-bottom-color", "#ddd")
+            $(".top-bar ul>li").css("color", "#49515A");
+        } else {
+            $(".top-bar").css("background", "")
+            $(".top-bar").css("border-bottom-width", "0px")
+            $(".top-bar ul>li").css("color", "#FFFFFF");
+        }
+
+        // aos 작동
+        AOS.init();
+    })
+
+
     // 슬릭
     $('.slider-box .slider').slick({
         infinite: true,
