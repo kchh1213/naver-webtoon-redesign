@@ -1,9 +1,9 @@
 /* 라이브러리 */
 
 .con {
-    /* width: 1200px;
-    max-width: none !important;  */
-    max-width: 1200px;
+    width: 1200px;
+    max-width: none !important; 
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
